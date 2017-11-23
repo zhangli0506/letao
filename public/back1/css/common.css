@@ -1,18 +1,21 @@
 @charset "UTF-8";
-.body_bg {
-    background-color: #222d32;
+html,
+body {
+    height: 100%;
 }
 
-.mt_150 {
-    margin-top: 150px;
+a {
+    text-decoration: none;
 }
 
-.mb_20 {
-    margin-bottom: 20px;
-}
 
-.panel-heading h4 {
-    text-align: center;
+/*lv ha*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 * {
@@ -26,20 +29,24 @@
     vertical-align: middle;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-    text-decoration: none;
+.body_bg {
+    background-color: #222d32;
 }
 
-body,
-html {
-    height: 100%;
+.mt_150 {
+    margin-top: 150px;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+.panel h4 {
+    text-align: center;
 }
 
 
-/* 侧边栏 */
+/*侧边栏*/
 
 .lt_aside {
     width: 180px;
@@ -57,32 +64,32 @@ html {
 
 .lt_aside .brand a {
     display: block;
-    width: 100%;
+    width: 180px;
     height: 50px;
     background-color: #367fa9;
-    font-size: 20px;
-    line-height: 50px;
     text-align: center;
+    line-height: 50px;
+    font-size: 24px;
     color: #fff;
 }
 
 .lt_aside .user {
-    width: 100%;
+    width: 180px;
     height: 150px;
 }
 
 .lt_aside .user img {
-    display: block;
     width: 80px;
     height: 80px;
-    margin: 30px auto 0;
+    display: block;
     border-radius: 50%;
+    margin: 30px auto 0;
 }
 
 .lt_aside .user p {
-    color: #fff;
     height: 40px;
     line-height: 40px;
+    color: #fff;
     text-align: center;
     font-size: 16px;
 }
@@ -91,6 +98,7 @@ html {
     display: block;
     height: 40px;
     line-height: 40px;
+    padding-left: 30px;
     color: #ccc;
     border: 3px solid transparent;
 }
@@ -103,33 +111,6 @@ html {
     border-left-color: #069;
     background-color: #1d1f21;
     color: #fff;
-}
-
-
-/* 主题区 */
-
-.lt_main {
-    height: 100%;
-    width: 100%;
-    padding-left: 180px;
-    transition: all 1s;
-}
-
-.lt_main.now {
-    padding-left: 0;
-}
-
-.lt_topbar {
-    height: 50px;
-    background-color: #3c8dbc;
-    padding: 0 20px;
-    margin-bottom: 20px;
-}
-
-.lt_topbar a {
-    font-size: 16px;
-    color: #fff;
-    line-height: 50px;
 }
 
 
@@ -160,7 +141,7 @@ html {
 }
 
 
-/* 报表 */
+/*报表*/
 
 .pic_left,
 .pic_right {
@@ -168,24 +149,23 @@ html {
     height: 400px;
 }
 
-
-/* 图片上传 */
-
 .fileupload_box {
     width: 82px;
     height: 34px;
     position: relative;
 }
 
-.fileupload_box input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
+.fileupload_box:hover button {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
 }
 
-.fileupload_box:hover button {
-    color: #000;
-    background-color: #ddd;
-    border-color: #aaa;
+.fileupload_box input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
